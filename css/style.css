@@ -1427,3 +1427,35 @@ body.offcanvas {
 
 .js .animate-box {
   opacity: 0; }
+
+/* === Mobile Responsiveness Fix === */
+@media (max-width: 768px) {
+  .timeline-entry-inner {
+    display: block !important;
+    width: 100%;
+  }
+
+  .timeline-label {
+    padding: 10px 15px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+  }
+
+  .timeline-label h2,
+  .timeline-label p {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .timeline-icon {
+    position: relative;
+    left: 0 !important;
+    margin-bottom: 10px;
+  }
+
+  .timeline {
+    padding-left: 20px;
+  }
+}
+
