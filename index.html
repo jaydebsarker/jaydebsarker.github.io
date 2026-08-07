@@ -50,32 +50,24 @@
 	<![endif]-->
 
 
-		<style>
-/* Mobile Alignment Fixes for Sidebar and Photo */
+	<style>
+/* Mobile Alignment Fixes - Preserves Menu Hiding */
 @media screen and (max-width: 768px) {
-    #colorlib-aside {
-        width: 100% !important;
-        display: flex !important;
-        flex-direction: column;
-        align-items: center; /* Centers the content horizontally */
-        text-align: center;
-        padding-top: 60px; /* Leaves room for the mobile toggle button */
-    }
-    
+    /* Center the profile image inside the drawer */
     #colorlib-aside .author-img {
-        margin: 0 auto 15px auto !important; /* Centers the image */
+        margin: 0 auto 15px auto !important;
         display: block;
     }
-    
+
+    /* Center name, title, and navigation items */
     #colorlib-logo, 
     #colorlib-aside .position, 
     #colorlib-main-menu {
         text-align: center !important;
-        width: 100%;
     }
-    
-    #colorlib-main {
-        width: 100% !important;
+
+    #colorlib-main-menu ul {
+        padding-left: 0;
     }
 }
 </style>
