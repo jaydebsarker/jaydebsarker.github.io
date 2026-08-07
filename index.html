@@ -49,6 +49,40 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
+
+		<style>
+/* Mobile Alignment Fixes for Sidebar and Photo */
+@media screen and (max-width: 768px) {
+    #colorlib-aside {
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column;
+        align-items: center; /* Centers the content horizontally */
+        text-align: center;
+        padding-top: 60px; /* Leaves room for the mobile toggle button */
+    }
+    
+    #colorlib-aside .author-img {
+        margin: 0 auto 15px auto !important; /* Centers the image */
+        display: block;
+    }
+    
+    #colorlib-logo, 
+    #colorlib-aside .position, 
+    #colorlib-main-menu {
+        text-align: center !important;
+        width: 100%;
+    }
+    
+    #colorlib-main {
+        width: 100% !important;
+    }
+}
+</style>
+
+
+
+		
 	</head>
 	<body>
 	<div id="colorlib-page">
